@@ -11,7 +11,7 @@ public class PrimitiveTypes {
         float floatDecVar = 20.65f, floatHexVar = 0xAAf;
         double doubleDecVar = 2.9, doubleHexVar = 0xAp2;
 
-        char charBinVar = 0b101, charOctVar = 043, charDecVar = 99, charHexVar = 0xFFF;
+        char charBinVar = 0b101, charOctVar = 043, charDecVar = 99, charHexVar = 0xFFF, charVar = 'A';
 
         // 2.
         int sumByte = byteBinVar + byteOctVar + byteDecVar + byteHexVar;
@@ -22,7 +22,7 @@ public class PrimitiveTypes {
         float sumFloat = floatDecVar + floatHexVar;
         double sumDouble = doubleDecVar + doubleHexVar;
 
-        int sumChar = charBinVar + charOctVar + charDecVar + charHexVar;
+        int sumChar = charBinVar + charOctVar + charDecVar + charHexVar + charVar;
 
         // 3.
         double result = sumByte + sumShort + sumInt + sumLong + sumFloat + sumDouble + sumChar;
