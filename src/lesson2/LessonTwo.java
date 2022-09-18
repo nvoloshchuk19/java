@@ -4,8 +4,8 @@ public class LessonTwo {
     public static void main(String[] args) {
         System.out.println(convertToCelsius(-10));
         System.out.println(convertToCentimeters(12));
-        System.out.println(compareThreeNumbers(1,2,3));
-        System.out.println(sumOfNumbers(555));
+        System.out.println(compareThreeNumbers(1, 2, 3));
+        System.out.println(sumOfDigits(765));
 
     }
 
@@ -31,16 +31,13 @@ public class LessonTwo {
         return maxNumber;
     }
 
-    // 7. Sum of numbers
-    public static int sumOfNumbers(int number) {
-        String num = Integer.toString(number);
-
+    // 7. Sum of digits
+    public static int sumOfDigits(int number) {
         int sum = 0;
-        for (int i = 0; i < num.length(); i++) {
-            sum += Character.getNumericValue(num.charAt(i));
+        while (number > 0) {
+            sum += number % 10;
+            number /= 10;
         }
         return sum;
-
-
     }
 }
