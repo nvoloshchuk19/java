@@ -65,7 +65,7 @@ public class LessonThree {
 
     public static void getPopulationSize() {
         int currentPopulation = 10_000_000;
-        float birthRate = 0.014f, deathRate = 0.008f;
+        double birthRate = 0.014f, deathRate = 0.008f;
         for (int i = 1; i <= 10; i++) {
             currentPopulation += (currentPopulation * birthRate) - (currentPopulation * deathRate);
         }
@@ -77,7 +77,7 @@ public class LessonThree {
         double depositSum = scanner.nextDouble();
         System.out.print("Enter a number of months: ");
         int months = scanner.nextInt();
-        float percent = 0.07f;
+        double percent = 0.07f;
         for (int i = 1; i <= months; i++) {
             depositSum += depositSum * percent;
         }
@@ -108,10 +108,8 @@ public class LessonThree {
                     System.out.println("Thursday");
                 } else if (number == 5) {
                     System.out.println("Friday");
-                } else if (number == 6) {
-                    System.out.println("Saturday");
                 } else {
-                    System.out.println("Sunday");
+                    System.out.println("Holiday");
                 }
 
 //                switch (number) {
@@ -131,10 +129,8 @@ public class LessonThree {
 //                        System.out.println("Friday");
 //                        break;
 //                    case 6:
-//                        System.out.println("Saturday");
-//                        break;
 //                    case 7:
-//                        System.out.println("Sunday");
+//                        System.out.println("Holiday");
 //                        break;
 //                }
                 break;
@@ -145,7 +141,7 @@ public class LessonThree {
 
     public static void getFactorial(Scanner scanner) {
         System.out.print("Enter a number: ");
-        int number = scanner.nextInt(), result = 1;
+        long number = scanner.nextLong(), result = 1;
         for (int i = 1; i <= number; i++) {
             result *= i;
         }
