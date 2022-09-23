@@ -48,10 +48,8 @@ public class LessonThree {
     public static void getEverySeventhNumber(Scanner scanner) {
         System.out.print("Enter a number: ");
         int number = scanner.nextInt();
-        for (int i = 1; i <= number; i++) {
-            if (i % 7 == 0) {
-                System.out.print(i + " ");
-            }
+        for (int i = 7; i <= number; i += 7) {
+            System.out.print(i + " ");
         }
     }
 
