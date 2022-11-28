@@ -2,22 +2,22 @@ package lesson7.task2;
 
 public class Python extends Animal {
     @Override
-    String talk() {
+    public String talk() {
         return "Python talks";
     }
 
     @Override
-    String eat() {
+    public String eat() {
         return "Python eats";
     }
 
     @Override
-    String run() {
+    public String run() {
         return "Python runs";
     }
 
     @Override
-    String sleep() {
+    public String sleep() {
         return "Python sleeps";
     }
 }

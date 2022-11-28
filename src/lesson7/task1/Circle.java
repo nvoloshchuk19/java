@@ -1,6 +1,6 @@
 package lesson7.task1;
 
-public class Circle extends Figure{
+public class Circle extends Figure {
     private final int radius;
 
     public Circle(int radius) {
@@ -8,12 +8,12 @@ public class Circle extends Figure{
     }
 
     @Override
-    double getArea() {
+    public double getArea() {
         return 2 * Math.PI * Math.pow(radius, 2);
     }
 
     @Override
-    double getPerimeter() {
+    public double getPerimeter() {
         return 2 * Math.PI * radius;
     }
 

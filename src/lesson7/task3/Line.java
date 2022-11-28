@@ -11,7 +11,7 @@ public class Line extends IsParallel {
     }
 
     @Override
-    boolean isParallel(Line line) {
+    public boolean isParallel(Line line) {
         return (line.second.getX() - line.first.getX()) / (line.second.getY() - line.first.getY()) ==
                 (this.second.getX() - this.first.getX()) / (this.second.getY() - this.first.getY());
     }

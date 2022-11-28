@@ -1,11 +1,11 @@
 package lesson7.task2;
 
 abstract public class Animal {
-    abstract String talk();
+    public abstract String talk();
 
-    abstract String eat();
+    public abstract String eat();
 
-    abstract String run();
+    public abstract String run();
 
-    abstract String sleep();
+    public abstract String sleep();
 }

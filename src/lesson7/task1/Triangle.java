@@ -12,13 +12,13 @@ public class Triangle extends Figure {
     }
 
     @Override
-    double getArea() {
+    public double getArea() {
         double perimeter = getPerimeter();
-        return Math.sqrt(perimeter*(perimeter-sideA)*(perimeter-sideB)*(perimeter-sideC));
+        return Math.sqrt(perimeter * (perimeter - sideA) * (perimeter - sideB) * (perimeter - sideC));
     }
 
     @Override
-    double getPerimeter() {
+    public double getPerimeter() {
         return (sideA + sideB + sideC) / 2;
     }
 

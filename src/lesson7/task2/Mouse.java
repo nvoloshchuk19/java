@@ -2,22 +2,22 @@ package lesson7.task2;
 
 public class Mouse extends Animal {
     @Override
-    String talk() {
+    public String talk() {
         return "Mouse talks";
     }
 
     @Override
-    String eat() {
+    public String eat() {
         return "Mouse eats";
     }
 
     @Override
-    String run() {
+    public String run() {
         return "Mouse runs";
     }
 
     @Override
-    String sleep() {
+    public String sleep() {
         return "Mouse sleeps";
     }
 }
