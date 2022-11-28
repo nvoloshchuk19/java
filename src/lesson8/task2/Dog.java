@@ -6,12 +6,12 @@ public class Dog extends Animal implements CanSwim, CanHunt {
     }
 
     @Override
-    String sound() {
+    public String sound() {
         return "Bark";
     }
 
     @Override
-    String eat() {
+    public String eat() {
         return "Omnomnomnom";
     }
 

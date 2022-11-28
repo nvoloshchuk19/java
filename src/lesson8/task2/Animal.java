@@ -11,9 +11,9 @@ abstract public class Animal {
         this.weight = weight;
     }
 
-    abstract String sound();
+    public abstract String sound();
 
-    abstract String eat();
+    public abstract String eat();
 
     @Override
     public boolean equals(Object o) {

@@ -12,7 +12,7 @@ public class Main {
         System.out.println(dog.sound());
         System.out.println(dog.growl());
 
-        Dove dove = new Dove(1 , 1);
+        Dove dove = new Dove(1, 1);
         System.out.println(dove.eat());
         System.out.println(dove.sound());
         System.out.println(dove.shakeHead());

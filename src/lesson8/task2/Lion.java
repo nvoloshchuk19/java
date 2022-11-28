@@ -1,21 +1,21 @@
 package lesson8.task2;
 
-public class Lion extends Animal implements CanSwim, CanHunt{
+public class Lion extends Animal implements CanSwim, CanHunt {
     public Lion(int age, int weight) {
         super(age, weight);
     }
 
     @Override
-    String sound() {
+    public String sound() {
         return "Roar";
     }
 
     @Override
-    String eat() {
+    public String eat() {
         return "Omnomnomnom";
     }
 
-    public boolean canRoar(){
+    public boolean canRoar() {
         return true;
     }
 }

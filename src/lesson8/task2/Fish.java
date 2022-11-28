@@ -1,21 +1,21 @@
 package lesson8.task2;
 
-public class Fish extends Animal implements CanSwim{
+public class Fish extends Animal implements CanSwim {
     public Fish(int age, int weight) {
         super(age, weight);
     }
 
     @Override
-    String sound() {
+    public String sound() {
         return "fish sound";
     }
 
     @Override
-    String eat() {
+    public String eat() {
         return "Omnomnomnom";
     }
 
-    public boolean breathUnderWater(){
+    public boolean breathUnderWater() {
         return true;
     }
 }
