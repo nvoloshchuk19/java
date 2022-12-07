@@ -1,23 +1,23 @@
 package lesson6;
 
 public class Point {
-    private final double X;
-    private final double Y;
+    private final double x;
+    private final double y;
 
     public double getX() {
-        return X;
+        return x;
     }
 
     public double getY() {
-        return Y;
+        return y;
     }
 
     public Point(double x, double y) {
-        this.X = x;
-        this.Y = y;
+        this.x = x;
+        this.y = y;
     }
 
     public double distance(Point point){
-        return Math.sqrt(Math.pow((point.X - this.X), 2) + Math.pow((point.Y - this.Y), 2));
+        return Math.sqrt(Math.pow((point.x - this.x), 2) + Math.pow((point.y - this.y), 2));
     }
 }
