@@ -7,6 +7,8 @@ public class Main {
     public static void main(String[] args) {
         String[] s = {"apple", "strawberry", "orange",};
         Comparator<String> comp = (a, b) -> a.length() - b.length();
-        Arrays.stream(s).sorted(comp).forEach(System.out::println);
+        Arrays.stream(s)
+                .sorted(comp)
+                .forEach(System.out::println);
     }
 }
